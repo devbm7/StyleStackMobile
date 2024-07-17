@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -71,11 +72,27 @@ class _AddClothScreenState extends State<AddClothScreen> {
                 if (_formKey.currentState!.validate() && _image != null) {
                   _formKey.currentState!.save();
                   final user = _authService.getCurrentUser();
-                  await _firestoreService.addCloth(user?.uid, _category, _name, _image!);
+                  await _firestoreService.addCloth(user.uid, _category, _name, _image!);
                   Navigator.pop(context);
                                 }
               },
             ),
+            // ElevatedButton(  
+            //   child: Text('Add Cloth'),  
+            //   onPressed: () async {  
+            //     if (_formKey.currentState!.validate() && _image != null) {  
+            //       _formKey.currentState!.save();  
+            //       final Stream<User?> user = await _authService.getCurrentUser();  
+            //       if (user != null) {  
+            //         await _firestoreService.addCloth(user.uid, _category, _name, _image!);  
+            //         Navigator.pop(context);  
+            //       } else {  
+            //         // Handle the case where user is null  
+            //         print('User is null');  
+            //       }  
+            //     }  
+            //   },  
+            // ),
           ],
         ),
       ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55247807174",
+    "project_id": "stylestack-7f1cc",
+    "storage_bucket": "stylestack-7f1cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55247807174:android:63de5ba15185ff94adadc7",
+        "android_client_info": {
+          "package_name": "com.example.stylestack_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_8rzcHVzJzp5Wd4g9DC8lt9yV8I4s4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
